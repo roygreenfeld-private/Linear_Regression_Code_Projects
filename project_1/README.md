@@ -3,7 +3,7 @@
 An introductory project in R: loading a dataset, computing descriptive statistics, plotting distributions and fitting a simple linear regression. It is based on Exercise Sheet 1, Question 6 of a statistics course.
 
 **Data:** `Exc1.csv`, 53 rows with 5 numeric columns: `Y`, `X1`, `X2`, `X3`, `X4`.
-**Script:** `פרויקט ראשוני בשפת R.R`. Each section runs on its own: select it and press *Run Code*.
+**Script:** `first_r_project.R`. Each section runs on its own: select it and press *Run Code*.
 **Running it:** paths are relative, so set R's working directory to this folder first (`setwd(...)`, or in VS Code enable `code-runner.fileDirectoryAsCwd`).
 
 ## Questions and results
