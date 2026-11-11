@@ -4,6 +4,7 @@ An introductory project in R: loading a dataset, computing descriptive statistic
 
 **Data:** `Exc1.csv`, 53 rows with 5 numeric columns: `Y`, `X1`, `X2`, `X3`, `X4`.
 **Script:** `פרויקט ראשוני בשפת R.R`. Each section runs on its own: select it and press *Run Code*.
+**Running it:** paths are relative, so set R's working directory to this folder first (`setwd(...)`, or in VS Code enable `code-runner.fileDirectoryAsCwd`).
 
 ## Questions and results
 
@@ -38,10 +39,3 @@ R² = 0.013
 - **X4 is also right-skewed.** Most values are between 50 and 150, with a few large values up to 292. The mean (110.6) is above the median (103).
 - **X1 does not explain Y.** The slope is tiny and not significant (t = 0.83, p = 0.41), and X1 explains only about 1.3% of the variance in Y. The scatter plot shows a cloud of points around an almost flat line. Only the intercept is significant, which simply says that the average Y (about 9) is far from zero.
 
-## What I learned about R
-
-- `data$column` selects a column, and `<-` stores a value. Assigning to a new column creates it.
-- Arithmetic on columns is vectorized: it runs row by row with no loop.
-- An R session has memory. A line only works if the lines it depends on (such as loading the data) already ran.
-- `lm(Y ~ X)` fits a regression, and `summary()` gives the coefficients, t values, p-values and R².
-- Code Runner (`Rscript`) has no plot window, so plots are saved with `png()` and `dev.off()` and then opened.
